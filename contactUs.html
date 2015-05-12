@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>تماس با جک مارتین</title>
+    <meta charset="UTF-8">
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<!-- css3-mediaqueries.js for IE less than 9 -->
+<!--[if lt IE 9]>
+<script 
+   src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+</script>
+<![endif]-->
+    <meta name="" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"></style>>
+<script type="text/javascript" src="js/respond.js"></script>
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     
+       <!-- function js for menu-->
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body style="background:url(images/bg.jpg) repeat;">
+<header>
+<div class="container">
+<div class="row">
+<div class="col-com-1 col-desk-1 hidden-tab hidden-mob hidden-desk phone-jackMartin fa"><span>021-22085078</span></div>
+<div class="col-com-3 col-tab-3 col-desk-3" >
+<nav>
+<ul>
+<li ><a href="Home.html"><span class="home fa nav-webfont"></span>
+<br>
+<span>خانه</span></a></li>
+<li ><a href="product.html"><span class="product fa nav-webfont"></span>
+<br>
+<span>محصولات</span></a> </li>
+<li><a href="contactUs.html"><span class="contactus fa nav-webfont"></span>
+<br>
+<span>تماس با ما</span></a></li>
+</ul>
+<a href="#" id="pull"></a>
+</nav></div>
+<div class="col-com-2 col-desk-3 col-tab-2 logo"><img src="images/logo-jackMartin.jpg" /></div>
+
+</div>
+
+</div>
+
+</header>
+<article class="top_article">
+<section class="container " >
+<div class="col-com-6 contact_slide" >
+<img width="100%" src="images/contact_image.jpg" >
+</div>
+
+<div class="col-com-6 col-tab-6 col-mob-6">
+<div class="contact">
+<span><img src="images/contact.jpg"></span>
+  <p class=" fa adress glyphIcon_contact"><b>آدرس:</b> تهران-نتابیسش
+  </p><br><p class=" fa phone_contact glyphIcon_contact"><b>تلفن : </b>22085078 021</p>
+  
+  <br/>
+  <p class=" fa email_contact glyphIcon_contact">info@jackmartin.ir<b> : ایمیل</b></p>
+ 
+  </div>
+  
+  </div>
+  
+  
+ 
+</section>
+</article>
+ <footer>
+        <div class="footer-left ">
+        <div>Copyright © 2015</div>
+        <div>طراحی توسط : <b>طراحان فراز رایانه کیهان</b></div>
+        </div>
+        
+        <div class="footer-right "><div class="footer-info">
+        <span>اطلاعات و خدمات پس از فروش : 22085078</span><br>
+        <span class=" fa email_contact footer-ghlyph"><b>info@jackmartin.ir : ایمیل</b></span></div>
+        <div class="footer-image"> <img src="images/jack-diamond.jpg"></div></div>
+        </footer>
+</body>
+</html>
